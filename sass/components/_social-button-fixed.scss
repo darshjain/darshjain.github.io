@@ -2,32 +2,33 @@
   display: fixed;
   align-items: center;
   justify-content: center;
-  text-align: center; }
-
+  text-align: center;
+}
 .share-btn {
   position: fixed;
   bottom: 1.5rem;
   right: 2rem;
-  z-index: 1; }
-  .share-btn span {
+  z-index: 1;
+  & span {
     height: 3rem;
     width: 3rem;
-    background: #52575d;
+    background: $heading-sub;
     line-height: 3rem;
     font-size: 1.2625rem;
     color: #e9fcf8;
     border-radius: 50%;
     cursor: pointer;
-    border: 0.06rem; }
-  @media (max-width: 56.25em) {
-    .share-btn {
-      bottom: 2rem;
-      right: 2rem; } }
-  @media (max-width: 37.5em) {
-    .share-btn {
-      bottom: 2rem;
-      right: 2rem; } }
-
+    border: 0.06rem;
+  }
+  @include responsive(tablet-portrait) {
+    bottom: 2rem;
+    right: 2rem;
+  }
+  @include responsive(phone) {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
 .share-btn a span {
   position: absolute;
   right: 0.625rem;
@@ -39,8 +40,8 @@
   z-index: -1;
   opacity: 0;
   pointer-events: none;
-  transition: 0.6s; }
-
+  transition: 0.6s;
+}
 #click:checked ~ .share-btn a span {
   height: 2.525rem;
   width: 2.525rem;
@@ -48,25 +49,26 @@
   font-size: 1.2625rem;
   z-index: 1;
   opacity: 1;
-  pointer-events: auto; }
-
+  pointer-events: auto;
+}
 #click:checked ~ .share-btn a:nth-child(2) span {
   bottom: 0rem;
-  right: 4rem; }
-
+  right: 4rem;
+}
 #click:checked ~ .share-btn a:nth-child(3) span {
   bottom: 3rem;
-  right: 3rem; }
-
+  right: 3rem;
+}
 .share-btn a:nth-child(3) span {
-  transition-delay: 0.1s; }
-
+  transition-delay: 0.1s;
+}
 #click:checked ~ .share-btn a:nth-child(4) span {
   bottom: 4rem;
-  right: 0rem; }
-
+  right: 0rem;
+}
 .share-btn a:nth-child(4) span {
-  transition-delay: 0.2s; }
-
+  transition-delay: 0.2s;
+}
 #click {
-  display: none; }
+  display: none;
+}

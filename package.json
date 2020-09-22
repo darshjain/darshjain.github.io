@@ -1,0 +1,14 @@
+{
+  "name": "darsh-page",
+  "version": "1.0.0",
+  "description": "Website for Darsh",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w -r sass/main.scss css/style.css"
+  },
+  "author": "Darsh Jain",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

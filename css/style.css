@@ -12,7 +12,7 @@
   .share-btn span {
     height: 3rem;
     width: 3rem;
-    background: black;
+    background: #474747;
     line-height: 3rem;
     font-size: 1.2625rem;
     color: white;
@@ -59,21 +59,21 @@
   right: 6.3rem; }
 
 .share-btn a:nth-child(3) span {
-  transition-delay: 0.1s; }
+  transition-delay: 0.02s; }
 
 #click:checked ~ .share-btn a:nth-child(4) span {
   bottom: 0rem;
   right: 9.3rem; }
 
 .share-btn a:nth-child(4) span {
-  transition-delay: 0.2s; }
+  transition-delay: 0.04s; }
 
 #click:checked ~ .share-btn a:nth-child(5) span {
   bottom: 0rem;
   right: 12.3rem; }
 
 .share-btn a:nth-child(5) span {
-  transition-delay: 0.3s; }
+  transition-delay: 0.06s; }
 
 #click {
   display: none; }
@@ -85,3 +85,9 @@ i {
 .container__technology i {
   font-size: 4rem;
   width: fit-content; }
+
+body {
+  background-size: cover; }
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.1); }

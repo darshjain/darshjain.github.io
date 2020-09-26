@@ -1,6 +1,8 @@
 .container__technology {
   background-color: rgba(255, 255, 255, 0.85);
   height: 70vh;
+  display: flex;
+  flex-direction: column;
 }
 .header__button {
   text-align: center;

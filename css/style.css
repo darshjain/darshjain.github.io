@@ -97,7 +97,11 @@ body {
 
 .jumbotron .container {
   height: 70vh;
-  text-align: center; }
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
   @media (max-width: 56.25em) {
     .jumbotron .container {
       height: 80vh; } }
@@ -107,7 +111,9 @@ body {
 
 .container__technology {
   background-color: rgba(255, 255, 255, 0.85);
-  height: 70vh; }
+  height: 70vh;
+  display: flex;
+  flex-direction: column; }
 
 .header__button {
   text-align: center;

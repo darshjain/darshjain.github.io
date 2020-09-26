@@ -1,6 +1,7 @@
 body {
   background-size: cover;
   height: 100vh;
+
 }
 .jumbotron,
 .card {
@@ -9,7 +10,11 @@ body {
 }
 .jumbotron .container {
   height: 70vh;
+  display: flex;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   @include responsive(tablet-portrait) {
     height: 80vh;
   }

@@ -88,7 +88,6 @@ i {
 
 body {
   background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1515120465960-435f20358400?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   height: 100vh; }
 
 .jumbotron,
@@ -97,10 +96,49 @@ body {
   align-items: center; }
 
 .jumbotron .container {
-  height: 6rem; }
+  height: 80vh;
+  text-align: center; }
   @media (max-width: 56.25em) {
     .jumbotron .container {
-      height: 10rem; } }
+      height: 80vh; } }
   @media (max-width: 37.5em) {
     .jumbotron .container {
-      height: 10rem; } }
+      height: 90vh; } }
+
+.container__technology {
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 70vh; }
+
+.header__button {
+  text-align: center;
+  border-radius: 0rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: 3px solid black;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s; }
+  .header__button:hover {
+    background: black;
+    color: white;
+    transform: translateY(-5px); }
+
+.footer {
+  padding: 3rem 5rem 1rem 5rem;
+  background: rgba(196, 193, 193, 0.1);
+  overflow: hidden;
+  text-align: center;
+  color: grey;
+  bottom: 0em; }
+  .footer > * {
+    margin-bottom: 1.5rem; }
+  .footer__social__icon i {
+    color: grey;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: 0.3s; }
+    .footer__social__icon i:hover {
+      color: black; }

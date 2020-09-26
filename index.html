@@ -70,7 +70,7 @@
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <img
         class="mx-2"
-        src="https://img.icons8.com/cotton/64/000000/laptop-coding.png"
+        src="https://img.icons8.com/officel/40/000000/hacking.png"
         height="40"
         width="40"
       />
@@ -173,47 +173,30 @@
       </div>
     </nav>
     <!-- Jumbotron container -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid my-5">
       <div class="container">
         <h1 class="display-4">Hello, I am Darsh Jain</h1>
         <p class="lead">I am currently learning and exploring Technology</p>
+        <div class="row my-5">
+          <a href="#tabs__tech" class="btn ml-auto mr-auto header__button"
+            >Technologies I am Comfortable with???</a
+          >
+        </div>
       </div>
     </div>
     <!-- Technology dropdown -->
-    <section class="container__technology mx-4">
-      <p>
-        <a
-          class="btn btn-primary mx-1 my-1"
-          data-toggle="collapse"
-          href="#frontend"
-          role="button"
-          aria-expanded="true"
-          aria-controls="frontend"
-        >
-          FrontEnd Languages
-        </a>
-        <button
-          class="btn btn-primary mx-1 my-1"
-          type="button"
-          data-toggle="collapse"
-          data-target="#backend"
-          aria-expanded="false"
-          aria-controls="backend"
-        >
-          BackEnd Languages
-        </button>
-        <a
-          class="btn btn-primary mx-1 my-1"
-          data-toggle="collapse"
-          href="#utilities"
-          role="button"
-          aria-expanded="false"
-          aria-controls="utilities"
-        >
-          Utilities
-        </a>
-      </p>
-      <div class="collapse" id="frontend">
+    <section class="container__technology mx-4 my-5" id="tabs__tech">
+      <!-- <h1 class="container col-2 my-2">Tech Tab</h1> -->
+      <blockquote class="blockquote text-center my-5">
+        <p class="mb-0">
+          I am a fast-learner and currently comfortable in these technologies,
+          
+        </p>
+        <footer class="blockquote-footer">
+          hopefully it will keep on adding.....
+        </footer>
+      </blockquote>
+      <div id="frontend">
         <div class="card card-body">
           At FrontEnd, I am familiar with:-
           <p align="center">
@@ -250,7 +233,7 @@
           </p>
         </div>
       </div>
-      <div class="collapse" id="backend">
+      <div id="backend">
         <div class="card card-body">
           At BackEnd, I am familiar with:-
           <p align="center">
@@ -283,7 +266,7 @@
           </p>
         </div>
       </div>
-      <div class="collapse" id="utilities">
+      <div id="utilities">
         <div class="card card-body">
           The Tools and Utilities I am familiar with:-
           <p align="center">
@@ -349,6 +332,22 @@
     </section>
     <!-- Github Card -->
     <div class="container col-2"></div>
+    <!-- Footer -->
+    <section class="footer row mx-auto">
+      <div class="footer__social col-md-12">
+        <div class="footer__social__icons mt-3">
+          <a class="footer__social__icon" href="#"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="footer__social__icon" href="#"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="footer__social__icon" href="#"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

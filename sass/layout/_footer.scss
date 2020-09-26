@@ -1,0 +1,22 @@
+.footer {
+  padding: 3rem 5rem 1rem 5rem;
+  background: rgba(196, 193, 193, 0.1);
+  overflow: hidden;
+  text-align: center;
+  color: grey;
+  bottom: 0em;
+  & > * {
+    margin-bottom: 1.5rem;
+  }
+
+  &__social__icon i {
+    color: grey;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

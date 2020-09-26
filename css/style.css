@@ -87,7 +87,76 @@ i {
   width: fit-content; }
 
 body {
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
-.jumbotron {
-  background-color: rgba(0, 0, 0, 0.1); }
+.jumbotron,
+.card {
+  background-color: rgba(255, 255, 255, 0.85); }
+
+.jumbotron .container {
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  @media (max-width: 56.25em) {
+    .jumbotron .container {
+      height: 80vh; } }
+  @media (max-width: 37.5em) {
+    .jumbotron .container {
+      height: 90vh; } }
+
+.container__github {
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.container__technology {
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.header__button {
+  text-align: center;
+  border-radius: 0rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: 3px solid rgba(20, 20, 20, 0.86);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: 0.3s; }
+  .header__button:hover {
+    background: rgba(20, 20, 20, 0.86);
+    color: white;
+    transform: translateY(-5px); }
+
+.button__github {
+  color: black;
+  text-align: center;
+  border: 3px solid rgba(20, 20, 20, 0.86);
+  background-color: white; }
+
+.footer {
+  padding: 3rem 5rem 1rem 5rem;
+  background: rgba(196, 193, 193, 0.1);
+  overflow: hidden;
+  text-align: center;
+  color: grey;
+  bottom: 0em; }
+  .footer > * {
+    margin-bottom: 1.5rem; }
+  .footer__social__icon i {
+    color: grey;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: 0.3s; }
+    .footer__social__icon i:hover {
+      color: black; }

@@ -20,6 +20,14 @@ body {
   @include responsive(phone) {
     height: 90vh;
   }
+  h1 {
+    @include responsive(tablet-portrait) {
+      font-size: 5rem;
+    }
+    @include responsive(phone) {
+      font-size: 5rem;
+    }
+  }
 }
 .container__github {
   height: 70vh;

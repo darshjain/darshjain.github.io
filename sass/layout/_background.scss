@@ -8,7 +8,7 @@ body {
   align-items: center;
 }
 .jumbotron .container {
-  height: 80vh;
+  height: 70vh;
   text-align: center;
   @include responsive(tablet-portrait) {
     height: 80vh;

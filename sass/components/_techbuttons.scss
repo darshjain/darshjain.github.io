@@ -1,6 +1,6 @@
 .container__technology {
   background-color: rgba(255, 255, 255, 0.85);
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -13,7 +13,6 @@
   padding: 0.5rem 1rem;
   border: 3px solid rgba(20, 20, 20, 0.86);
   font-size: 1.25rem;
-  text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s;
 
@@ -22,4 +21,10 @@
     color: white;
     transform: translateY(-5px);
   }
+}
+.button__github{
+  color: black;
+  text-align: center;
+  border: 3px solid rgba(20, 20, 20, 0.86);
+  background-color: white;
 }

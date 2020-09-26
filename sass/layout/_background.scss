@@ -1,12 +1,11 @@
 body {
   background-size: cover;
   height: 100vh;
-
 }
 .jumbotron,
 .card {
   background-color: rgba(255, 255, 255, 0.85);
-  align-items: center;
+  //align-items: center;
 }
 .jumbotron .container {
   height: 70vh;
@@ -21,4 +20,12 @@ body {
   @include responsive(phone) {
     height: 90vh;
   }
+}
+.container__github {
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }

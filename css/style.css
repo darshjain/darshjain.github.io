@@ -107,6 +107,12 @@ body {
   @media (max-width: 37.5em) {
     .jumbotron .container {
       height: 90vh; } }
+  @media (max-width: 56.25em) {
+    .jumbotron .container h1 {
+      font-size: 5rem; } }
+  @media (max-width: 37.5em) {
+    .jumbotron .container h1 {
+      font-size: 5rem; } }
 
 .container__github {
   height: 70vh;

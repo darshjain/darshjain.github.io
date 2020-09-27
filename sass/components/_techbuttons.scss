@@ -22,9 +22,15 @@
     transform: translateY(-5px);
   }
 }
-.button__github{
+.button__github {
   color: black;
   text-align: center;
   border: 3px solid rgba(20, 20, 20, 0.86);
   background-color: white;
+  &:hover {
+    background: rgba(20, 20, 20, 0.86);
+    color: white;
+    transform: translateY(-5px);
+    border: 0ch;
+  }
 }

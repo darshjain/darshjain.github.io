@@ -149,6 +149,11 @@ body {
   text-align: center;
   border: 3px solid rgba(20, 20, 20, 0.86);
   background-color: white; }
+  .button__github:hover {
+    background: rgba(20, 20, 20, 0.86);
+    color: white;
+    transform: translateY(-5px);
+    border: 0ch; }
 
 .footer {
   padding: 3rem 5rem 1rem 5rem;

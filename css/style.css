@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 .social__component {
   display: fixed;
   align-items: center;

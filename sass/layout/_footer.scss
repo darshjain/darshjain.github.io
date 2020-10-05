@@ -19,4 +19,14 @@
       color: black;
     }
   }
+  .footer__details {
+    align-items: center;
+    align-content: center;
+  }
+  i {
+    color: grey;
+    &:hover {
+      color: black;
+    }
+  }
 }

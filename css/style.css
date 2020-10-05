@@ -180,3 +180,10 @@ body {
     transition: 0.3s; }
     .footer__social__icon i:hover {
       color: black; }
+  .footer .footer__details {
+    align-items: center;
+    align-content: center; }
+  .footer i {
+    color: grey; }
+    .footer i:hover {
+      color: black; }

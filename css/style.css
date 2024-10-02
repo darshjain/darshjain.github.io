@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html {
 	scroll-behavior: smooth;
 }
@@ -129,6 +130,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
 	color: white;
 }
 @media (max-width: 56.25em) {
@@ -241,3 +243,91 @@ body {
 	/* color: black; */
 	color: white;
 }
+
+/* Typewriter container styling */
+.typewriter {
+	margin-top: 10vh;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 0.15em solid; /* Simulates a blinking cursor */
+	width: fit-content;
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink {
+	0% {
+	  border-color: transparent;
+	}
+	50% {
+	  border-color: white;
+	  border-width: 1px;
+	}
+	100% {
+	  border-color: transparent;
+	}
+  }
+  
+  .typewriter {
+	animation: blink 1s step-end infinite;
+  }
+
+  .icon {
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+	color: white;
+  }
+  
+  .icon i {
+	color: white; /* Set icons to white */
+	font-size: 24px; /* Adjust the size of the icons if needed */
+	transition: color 0.3s ease; /* Smooth transition for any color changes */
+  }
+  
+  .icon:hover i {
+	opacity: 0.6; /* Optional: Add a hover effect with a different color */
+	transition: color 0.6s ease;
+  }
+
+  
+  /* Tooltip styles */
+  .icon:hover::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: black;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	white-space: nowrap;
+	font-size: 12px;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.3s ease;
+  }
+  
+  .icon:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.3s ease;
+  }
+  
+  /* Hide the tooltip by default */
+  .icon::before,
+  .icon::after {
+	opacity: 0;
+	visibility: hidden;
+  }
+  
